@@ -14,15 +14,15 @@ Este repositório fornece uma base simples com configuração pronta para desenv
 
 ## Requisitos
 
-- Node.js >= 22
-- npm / yarn / pnpm (qualquer gerenciador de pacotes que preferir)
+- Node.js >= 22.12.0
+- Yarn 1
 
 ## Instalação
 
-Instale dependências:
+Instale as dependências com Yarn:
 
 ```bash
-npm install
+yarn install
 ```
 
 ## Estrutura do projeto
@@ -38,27 +38,27 @@ Principais arquivos e pastas:
 
 Os scripts definidos em `package.json`:
 
-- `npm run dev` — executa `src/index.ts` em modo desenvolvimento com `tsx` e `dotenv-flow`.
-- `npm run build` — compila TypeScript (`tsc`) e aplica `tsc-alias` para resolver paths.
-- `npm run start` — executa a build (`dist/index.js`) com suporte a `dotenv-flow`.
-- `npm run check` — executa `biome check` (lint/static analysis).
-- `npm run check:fix` — tenta corrigir problemas automaticamente (`biome check --fix`).
-- `npm run test` — roda testes com `vitest` (pasta `src`).
-- `npm run test:coverage` — roda testes com cobertura.
-- `npm run verify` — roda `check`, `test` e `build` (fluxo de verificação).
-- `npm run release` — inicia fluxo de release via `release-it` (configurar antes de usar).
+- `yarn dev` — executa `src/index.ts` em modo desenvolvimento com `tsx` e `dotenv-flow`.
+- `yarn build` — compila TypeScript (`tsc`) e aplica `tsc-alias` para resolver paths.
+- `yarn start` — executa a build (`dist/index.js`) com suporte a `dotenv-flow`.
+- `yarn run check` — executa `biome check` (lint/static analysis; `yarn check` é o verificador interno do Yarn 1).
+- `yarn check:fix` — tenta corrigir problemas automaticamente (`biome check --fix`).
+- `yarn test` — roda testes com `vitest` (pasta `src`) e passa quando não há arquivos de teste.
+- `yarn test:coverage` — roda testes com cobertura.
+- `yarn verify` — roda `check`, `test` e `build` (fluxo de verificação).
+- `yarn release` — inicia fluxo de release via `release-it` (configurar antes de usar).
 
 Exemplo rápido (desenvolvimento):
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Build e execução em produção local:
 
 ```bash
-npm run build
-npm run start
+yarn build
+yarn start
 ```
 
 ## Variáveis de ambiente
@@ -68,17 +68,17 @@ Este template inclui `dotenv-flow` para carregar variáveis de ambiente em `dev`
 ## Convenções e contribuições
 
 - Commits: a base já traz `commitizen` e `cz-conventional-changelog` para gerar mensagens de commit no formato Conventional Commits.
-- `commitlint` e `husky` são usados para reforçar políticas de commit (hooks) — é recomendável ativar `husky` localmente (`npm run prepare` já está presente no `package.json`).
+- `commitlint` e `husky` são usados para reforçar políticas de commit (hooks) — é recomendável ativar `husky` localmente (`yarn prepare` já está presente no `package.json`).
 
 Se quiser contribuir:
 
 1. Fork e branch feature/bugfix.
 2. Siga o padrão de commits convencionais (p.ex. `git cz` para criar commits).
-3. Rode `npm run check` e `npm run test` antes de abrir PR.
+3. Rode `yarn run check` e `yarn test` antes de abrir PR.
 
 ## Publicação / Releases
 
-O projeto inclui `release-it` para automatizar releases. Configure `release-it` (token de publicação e parâmetros) antes de usar `npm run release`.
+O projeto inclui `release-it` para automatizar releases. Configure `release-it` (token de publicação e parâmetros) antes de usar `yarn release`.
 
 ## Exemplos e ponto de partida
 
