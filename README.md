@@ -14,7 +14,7 @@ Este repositório fornece uma base simples com configuração pronta para desenv
 
 ## Requisitos
 
-- Node.js >= 22.12.0
+- Node.js >= 22.21.0
 - Yarn 1
 
 ## Instalação
