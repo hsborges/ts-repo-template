@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/hsborges/ts-repo-template/compare/v1.0.2...v2.0.0) (2026-08-15)
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Node.js 22.12.0+ is now required.
+* **release:** Node.js 22.21.0+ is now required.
+
+* **deps:** upgrade toolchain ([b670b73](https://github.com/hsborges/ts-repo-template/commit/b670b73c960d7c69fd49ab5328c8dff3ed6dba8e))
+* **release:** align release-it 21 config ([8956cb5](https://github.com/hsborges/ts-repo-template/commit/8956cb5e9201cb9decdd37cbd93244c998f13c3d))
+* remove preferencia conflitante ([527dba4](https://github.com/hsborges/ts-repo-template/commit/527dba4c52f832b6431699b0de97ef56364c074b))
+* upgrade deps ([0cb717a](https://github.com/hsborges/ts-repo-template/commit/0cb717a18cd8782a542ac79aafcd61f5d0ad2235))
+
 ## [1.0.2](https://github.com/hsborges/ts-repo-template/compare/v1.0.1...v1.0.2) (2025-09-11)
 
 * força uso de ponto e virgula ao final ([117fdfe](https://github.com/hsborges/ts-repo-template/commit/117fdfea205a2787e4c19b302dd9b1fc6defabff))
